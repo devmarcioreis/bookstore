@@ -17,10 +17,64 @@
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <!--========JavaScript========-->
     <script src="assets/js/main.js" defer></script>
-    <title>Bookstore</title>
+    <title>BookStore</title>
 </head>
 
 <body>
+    <!--========Header========-->
+    <header class="header" data-header>
+        <div class="header-top">
+            <div class="container">
+                <a href="#" class="logo">
+                    <img src="assets/images/logo.png" alt="Logo">
+                    BookStore
+                </a>
+                <div class="input-wrapper">
+                    <input type="search" placeholder="buscar livro..." class="input-field">
+                    <button class="btn btn-primary">Buscar</button>
+                </div>
+                <div class="header-action">
+                    <button class="header-action-btn" aria-label="cart" title="Cart">
+                        <span class="span">0</span>
+                        <i class="uil uil-shopping-bag" aria-hidden="true"></i>
+                    </button>
+                    <button class="header-action-btn" aria-label="open menu" title="Open Menu" data-nav-toggler>
+                        <i class="uil uil-bars"></i>
+                    </button>
+                    <button class="header-action-btn" aria-label="user" title="User">
+                        <i class="uil uil-user"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom" data-navbar>
+            <div class="container">
+                <nav class="navbar">
+                    <button class="nav-close-btn" data-nav-toggler aria-label="close menu" title="Close Menu">
+                        <i class="uil uil-multiply"></i>
+                    </button>
+                    <div class="navbar-top">
+                        <input type="search" name="search" placeholder="buscar livro..." class="input-field">
+                        <button class="search-btn" aria-label="Search">
+                            <i class="uil uil-search"></i>
+                        </button>
+                    </div>
+                    <ul class="navbar-list">
+                        <li><a href="#" class="navbar-link">Home</a></li>
+                        <li><a href="#" class="navbar-link">Blog</a></li>
+                        <li><a href="#" class="navbar-link">Livros</a></li>
+                        <li><a href="#" class="navbar-link">Sobre nós</a></li>
+                        <li><a href="#" class="navbar-link">Contato</a></li>
+                    </ul>
+                </nav>
+                <a href="tel:115555-5555" class="header-contact-link">
+                    <i class="uil uil-phone-volume"></i>
+                    <span class="span">(11) 5555-5555</span>
+                </a>
+            </div>
+        </div>
+        <div class="overlay" data-overlay data-nav-toggler></div>
+    </header>
     
 </body>
 </html>

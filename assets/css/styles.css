@@ -68,7 +68,7 @@ body {
     line-height: 1.5;
     height: 300vh;
 }
-a, img, span, time, data, input, button, ion-icon {
+a, img, span, time, data, input, button, i {
     display: block;
 }
 a {
@@ -94,7 +94,7 @@ button {
 :focus-visible {
     outline-offset: 4px;
 }
-ion-icon {
+i {
     pointer-events: none;
 }
 ::-webkit-scrollbar {
@@ -111,3 +111,13 @@ ion-icon {
 }
 
 /*==========Header==========*/
+.logo {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.logo img {
+    width: 20px;
+}
