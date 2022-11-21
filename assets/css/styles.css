@@ -111,6 +111,41 @@ i {
 }
 
 /*==========Header==========*/
+.navbar, .overlay, .header-top :is(.input-wrapper, .header-action-btn:last-child), .header-contact-link {
+    display: none;
+}
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--black-new);
+    z-index: 4;
+}
+.header.active {
+    position: fixed;
+    transform: translateY(-100%);
+    animation: slideInTop .5s ease forwards;
+}
+
+@keyframes slideInTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.header-top {
+    padding-block: 25px;
+}
+.container {
+    padding-inline: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .logo {
     display: flex;
     align-items: center;
