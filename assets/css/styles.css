@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/*==========Google Fonts==========*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/*==========Reset CSS==========*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*==========Root==========*/
+:root {
+    --black-color: #000;
+    --white-color: #fff;
+    --principal-font: 'Poppins', sans-serif;
+}
+
+/*==========Base==========*/
+body {
+    font-family: var(--principal-font);
+}
