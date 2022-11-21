@@ -191,7 +191,6 @@ i {
     width: 100%;
     height: 100vh;
     background: var(--black-new);
-    border: 1px solid var(--white-1);
     padding: 30px 5px;
     transition: 0.25s var(--cubic-in);
     visibility: hidden;
@@ -211,7 +210,6 @@ i {
     height: 40px;
     display: grid;
     place-items: center;
-    background: var(--blue-color);
     transition: var(--transition-1);
 }
 .nav-close-btn:is(:hover, :focus) {
@@ -219,24 +217,22 @@ i {
 }
 .navbar-top {
     position: relative;
-    border: 1px solid var(--white-1);
     margin-block-end: 40px;
+    border-radius: 5px;
 }
 .navbar-top, .input-field {
     font-size: var(--fs-6);
-    padding: 15px;
+    padding: 10px;
 }
 .navbar-top .search-btn {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
-    border-inline-start: 1px solid var(--white-1);
     padding-inline: 15px;
 }
 .navbar-list {
-    border-block: 1px solid var(--white-1);
-    padding-block: 30px;
+    padding-block: 5px;
 }
 .navbar-link {
     padding-block: 10px;
