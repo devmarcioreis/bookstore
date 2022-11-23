@@ -320,7 +320,8 @@ i {
     background-position: left;
 }
 .hero .container {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 .hero-title::after {
