@@ -378,3 +378,10 @@ i {
         transform: rotate(-4deg);
     }
 }
+
+.feature-card .card-title {
+    margin-block-end: 5px;
+}
+.feature-card .card-text {
+    color: var(--blue-color);
+}
