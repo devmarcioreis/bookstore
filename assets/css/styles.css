@@ -312,6 +312,28 @@ i {
 }
 
 /*==========Hero==========*/
+.hero .play-btn {
+    display: none;
+}
 .hero {
-    
+    padding-block-start: 90px;
+    background-position: left;
+}
+.hero .container {
+    display: grid;
+    gap: 20px;
+}
+.hero-title::after {
+    bottom: -15px;
+    left: 0;
+    width: 70px;
+    height: 5px;
+    background: var(--blue-color);
+}
+.hero-text {
+    margin-block: 40px;
+}
+.hero-banner {
+    max-width: 300px;
+    margin-inline: auto;
 }
