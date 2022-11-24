@@ -174,7 +174,6 @@ i {
     font-size: var(--fs-6);
 }
 .img-holder {
-    aspect-ratio: var(--width) / var(--height);
     overflow: hidden;
 }
 .img-cover {
