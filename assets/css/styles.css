@@ -167,7 +167,82 @@ i {
     display: grid;
     gap: 20px;
 }
-
+.section-title, .section-text {
+    text-align: center;
+}
+.section-text {
+    font-size: var(--fs-6);
+}
+.img-holder {
+    aspect-ratio: var(--width) / var(--height);
+    overflow: hidden;
+}
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.product-card {
+    position: relative;
+    border: 1px solid var(--white-10);
+}
+.product-card .card-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: var(--blue-color);
+    color: var(--white-1);
+    font-weight: var(--fw-700);
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: var(--radius-pill);
+}
+.product-card .card-banner {
+    position: relative;
+}
+.product-card .card-action {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: var(--blue-dark);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.0);
+    padding: 10px 15px;
+    border-radius: var(--radius-pill);
+    transition: var(--transition-2);
+    opacity: 0;
+}
+.product-card:is(:hover, :focus) .card-action {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+.product-card .action-btn {
+    font-size: 18px;
+    transition: var(--transition-1);
+}
+.product-card :is(.action-btn, .card-title):is(:hover, :focus) {
+    color: var(--blue-color);
+}
+.product-card .card-content {
+    padding: 10px;
+}
+.product-card .h3 {
+    font-weight: var(--fw-400);
+}
+.product-card .card-title {
+    transition: var(--transition-1);
+}
+.product-card .card-price {
+    color: var(--blue-color);
+    margin-block: 10px 5px;
+}
+.product-card .rating-wrapper {
+    display: flex;
+    gap: 5px;
+    color: var(--yellow-color);
+}
 
 
 /*==========Header==========*/
