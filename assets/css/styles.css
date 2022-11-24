@@ -187,14 +187,15 @@ i {
 }
 .product-card .card-badge {
     position: absolute;
-    top: 15px;
-    left: 15px;
+    top: 10px;
+    left: 10px;
     background: var(--blue-color);
     color: var(--white-1);
     font-weight: var(--fw-700);
     text-transform: uppercase;
     padding: 3px 8px;
     border-radius: var(--radius-pill);
+    z-index: 1;
 }
 .product-card .card-banner {
     position: relative;
@@ -471,4 +472,7 @@ i {
 }
 .featured .section-text {
     margin-block: 10px 50px;
+}
+.feature .grid-list {
+    gap: 10px;
 }
