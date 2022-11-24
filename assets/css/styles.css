@@ -464,10 +464,11 @@ i {
 }
 
 /*==========Featured==========*/
-.feature, .container {
+.containers {
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 5px 40px;
 }
 .featured .section-text {
     margin-block: 10px 50px;
