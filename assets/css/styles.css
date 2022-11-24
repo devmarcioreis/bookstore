@@ -184,7 +184,7 @@ i {
 }
 .product-card {
     position: relative;
-    border: 1px solid var(--white-10);
+    border: 5px solid var(--white-10);
 }
 .product-card .card-badge {
     position: absolute;
@@ -461,4 +461,14 @@ i {
 }
 .feature-card .card-text {
     color: var(--blue-color);
+}
+
+/*==========Featured==========*/
+.feature, .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.featured .section-text {
+    margin-block: 10px 50px;
 }
