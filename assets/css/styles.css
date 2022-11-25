@@ -275,7 +275,7 @@ i {
 .header-top {
     padding-block: 25px;
 }
-.container {
+.header .container {
     padding-inline: 15px;
     display: flex;
     align-items: center;
@@ -464,16 +464,10 @@ i {
 }
 
 /*==========Featured==========*/
-.containers {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 5px 40px;
-}
 .featured .section-text {
     margin-block: 10px 50px;
 }
-.feature .grid-list {
+.featured .grid-list {
     gap: 10px;
 }
 
