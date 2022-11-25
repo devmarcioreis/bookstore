@@ -177,11 +177,11 @@ i {
 }
 .img-holder {
     overflow: hidden;
+    border: 2px solid var(--blue-color);
 }
 .img-cover {
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 .product-card {
     position: relative;
@@ -206,7 +206,7 @@ i {
     display: flex;
     align-items: center;
     gap: 15px;
-    background: var(--blue-dark);
+    background: var(--blue-color);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.0);
