@@ -90,6 +90,8 @@ input::-webkit-search-cancel-button {
 button {
     cursor: pointer;
 }
+
+/*==========Layout==========*/
 :focus-visible {
     outline-offset: 4px;
 }
@@ -183,7 +185,6 @@ i {
 }
 .product-card {
     position: relative;
-    border: 5px solid var(--white-10);
 }
 .product-card .card-badge {
     position: absolute;
@@ -243,7 +244,33 @@ i {
     gap: 5px;
     color: var(--yellow-color);
 }
-
+.has-scrollbar {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-snap-type: inline mandatory;
+    padding-block-end: 20px;
+    margin-block-end: -20px;
+}
+.scrollbar-item {
+    min-width: 55%;
+    scroll-snap-align: start;
+}
+.has-scrollbar::-webkit-scrollbar {
+    height: 10px;
+}
+.has-scrollbar::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid var(--yellow-color);
+    border-radius: 5px;
+}
+.has-scrollbar::-webkit-scrollbar-thumb {
+    background: var(--yellow-color);
+    border-radius: 5px;
+}
+.has-scrollbar::-webkit-scrollbar-button {
+    width: 10%;
+}
 
 /*==========Header==========*/
 .header-top :is(.input-wrapper, .header-action-btn:last-child), .header-contact-link {
@@ -470,6 +497,9 @@ i {
 .featured .section-text {
     margin-block: 10px 50px;
 }
+.featured .container {
+    padding: 10px 40px;
+}
 .featured .grid-list {
     gap: 10px;
 }
@@ -502,3 +532,21 @@ i {
 }
 
 /*==========Popular==========*/
+.popular .section-text {
+    margin-block: 10px 40px;
+}
+.filter-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px 10px;
+    margin-block-end: 40px;
+}
+.filter-btn {
+    font-size: var(--fs-5);
+    padding: 5px 20px;
+    transition: var(--transition-1);
+}
+.filter-btn.active {
+    color: var(--blue-color);
+}
