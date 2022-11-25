@@ -414,6 +414,9 @@ i {
 .hero-text {
     margin-block: 40px;
 }
+.hero .btn{
+    margin-inline: auto;
+}
 .hero-banner {
     max-width: 300px;
     margin-inline: auto;
@@ -497,3 +500,5 @@ i {
     padding-block: 12px;
     margin-inline: auto;
 }
+
+/*==========Popular==========*/
