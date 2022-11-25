@@ -472,3 +472,28 @@ i {
 }
 
 /*==========Offer==========*/
+.offer {
+    text-align: center;
+}
+.offer .section-subtitle {
+    font-size: var(--fs-3);
+}
+.offer .section-title {
+    color: var(--blue-color);
+    font-size: var(--fs-2);
+    margin-block: 20px 30px;
+}
+.countdow-list {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-block: 25px 40px;
+}
+.cuntdown-time {
+    font-size: var(--fs-5);
+    margin-block-end: 8px;
+}
+.offer .btn {
+    padding-block: 12px;
+    margin-inline: auto;
+}
