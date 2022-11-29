@@ -253,8 +253,9 @@ i {
     margin-block-end: -20px;
 }
 .scrollbar-item {
-    min-width: 65%;
+    min-width: 100%;
     scroll-snap-align: start;
+    padding: 20px;
 }
 .has-scrollbar::-webkit-scrollbar {
     height: 10px;
