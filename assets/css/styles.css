@@ -564,6 +564,7 @@ i {
 .blog-card {
     text-align: center;
     border: 1px solid var(--blue-color);
+    border-radius: 5px;
     padding: 10px;
 }
 .blog-card .card-content {
@@ -606,4 +607,8 @@ i {
 .blog-card .card-text {
     font-size: var(--fs-6);
     margin-block-end: 15px;
+}
+.blog-card .btn {
+    margin-inline: auto;
+    padding-block: 12px;
 }
