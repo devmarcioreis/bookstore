@@ -552,8 +552,6 @@ i {
     color: var(--blue-color);
 }
 
-/*==========Popular==========*/
-
 /*==========Blog==========*/
 .blog {
     padding-block-start: 0;
@@ -612,3 +610,5 @@ i {
     margin-inline: auto;
     padding-block: 12px;
 }
+
+/*==========Footer==========*/
