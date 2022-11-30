@@ -612,3 +612,20 @@ i {
 }
 
 /*==========Footer==========*/
+.footer-top {
+    border-block-end: 1px solid var(--gray-color);
+}
+.footer-text {
+    margin-block: 15px 30px;
+}
+.social-list {
+    display: flex;
+    gap: 20px;
+}
+.social-link {
+    font-size: 25px;
+    transition: var(--transition-1);
+}
+.social-link:is(:hover, :focus) {
+    color: var(--blue-color);
+}
